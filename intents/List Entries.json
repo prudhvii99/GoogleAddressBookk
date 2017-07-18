@@ -1,0 +1,78 @@
+{
+  "userSays": [
+    {
+      "id": "c24611bc-3736-4164-9399-d90eaf5a3596",
+      "data": [
+        {
+          "text": "List all names in the address book"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "342cc044-8b65-4faa-8083-05c525221ea9",
+      "data": [
+        {
+          "text": "Tell me all names in the address book"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "62f546e4-613d-4c34-a53d-6100e17f63dc",
+      "data": [
+        {
+          "text": "List the entries"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "736a753e-ec5f-4e07-888a-45940b0c4e2c",
+      "data": [
+        {
+          "text": "List all entries"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e40ae5a6-5b5c-491b-b8d2-03cf46500fa5",
+      "data": [
+        {
+          "text": "Please list all entries in the address book"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "d9c0b210-cb47-4e5f-ae5f-5545306c4c67",
+  "name": "List Entries",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.list",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

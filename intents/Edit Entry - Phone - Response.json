@@ -1,0 +1,66 @@
+{
+  "userSays": [
+    {
+      "id": "e22a91f9-5084-474e-9b48-c89d82dfda27",
+      "data": [
+        {
+          "text": "12321323",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "99d00ada-a9f8-41d4-9b2d-feb3f801de6e",
+  "parentId": "d415da58-8719-40d3-8df9-58f321f77d71",
+  "rootParentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "name": "Edit Entry - Phone - Response",
+  "auto": true,
+  "contexts": [
+    "EditEntry-Phone-Request-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.edit.phone.response",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            "Please enter the new phone number"
+          ],
+          "isList": false
+        },
+        {
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "#EditEntry-Phone-Request-followup.name"
+        },
+        {
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "#EditEntry-Phone-Request-followup.last-name"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

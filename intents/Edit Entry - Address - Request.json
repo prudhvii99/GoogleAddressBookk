@@ -1,0 +1,69 @@
+{
+  "userSays": [
+    {
+      "id": "3bb4bdbf-02c9-4d77-b711-66f759149260",
+      "data": [
+        {
+          "text": "The Address"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4d5408b4-1803-40d4-87f3-ddab9ed7232e",
+      "data": [
+        {
+          "text": "Address"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "d1bfddff-bba8-4c51-bd1f-d6b5421848a2",
+  "parentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "rootParentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "name": "Edit Entry - Address - Request",
+  "auto": true,
+  "contexts": [
+    "EditEntry-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.edit.address",
+      "affectedContexts": [
+        {
+          "name": "EditEntry-Address-Request-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "#EditEntry-followup.name"
+        },
+        {
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "#EditEntry-followup.last-name"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

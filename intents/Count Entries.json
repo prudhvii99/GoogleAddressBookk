@@ -1,0 +1,58 @@
+{
+  "userSays": [
+    {
+      "id": "c8084bef-1424-412a-b783-858948a75880",
+      "data": [
+        {
+          "text": "Tell me how many users are in the address book"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b9705068-5fd9-4d58-8d8c-a508a03f21c7",
+      "data": [
+        {
+          "text": "Count entries"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bc6d35c6-4650-4c64-8a19-e9efe149b7d0",
+      "data": [
+        {
+          "text": "How many entries are in the address book?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "cae7ed32-afff-4153-9af9-645ea7cffca1",
+  "name": "Count Entries",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.count",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

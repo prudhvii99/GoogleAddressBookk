@@ -1,0 +1,90 @@
+{
+  "userSays": [
+    {
+      "id": "33cf1d0f-6850-4d40-a60d-e02de2e61740",
+      "data": [
+        {
+          "text": "phone"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bd7ce5ed-f04b-4834-8c2d-f7f65b4a1649",
+      "data": [
+        {
+          "text": "number"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0e21ba6c-ef83-4823-b2d2-8ac2661ca4bf",
+      "data": [
+        {
+          "text": "The phone number"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "515d090a-d113-4780-9b36-ca47782e0b31",
+      "data": [
+        {
+          "text": "Phone Number"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "d415da58-8719-40d3-8df9-58f321f77d71",
+  "parentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "rootParentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "name": "Edit Entry - Phone - Request",
+  "auto": true,
+  "contexts": [
+    "EditEntry-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.edit.phone",
+      "affectedContexts": [
+        {
+          "name": "EditEntry-Phone-Request-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": false,
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "#EditEntry-followup.name"
+        },
+        {
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "#EditEntry-followup.last-name"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,66 @@
+{
+  "userSays": [
+    {
+      "id": "bee780c4-afac-4ffe-817a-e35fbf00f411",
+      "data": [
+        {
+          "text": "123 Park Avenue",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "e7f7e756-f0a1-40ba-b4d8-273f1e251a73",
+  "parentId": "d1bfddff-bba8-4c51-bd1f-d6b5421848a2",
+  "rootParentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "name": "Edit Entry - Address - Response",
+  "auto": true,
+  "contexts": [
+    "EditEntry-Address-Request-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.edit.address.response",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.address",
+          "name": "address",
+          "value": "$address",
+          "prompts": [
+            "Please give the address"
+          ],
+          "isList": false
+        },
+        {
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "#EditEntry-Address-Request-followup.name"
+        },
+        {
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "#EditEntry-Address-Request-followup.last-name"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

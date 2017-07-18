@@ -1,0 +1,66 @@
+{
+  "userSays": [
+    {
+      "id": "b593a5d2-8e3b-45ff-a3df-6c933c6e857a",
+      "data": [
+        {
+          "text": "bobsmith@example.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "71a45fb5-3e7c-4df5-97f5-c207ae89c3c3",
+  "parentId": "04ef58de-4aa4-4acb-81a1-01e2ae2d7cd0",
+  "rootParentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "name": "Edit Entry - Email - Response",
+  "auto": true,
+  "contexts": [
+    "EditEntry-Email-Request-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.edit.email.response",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            "Please give the new email"
+          ],
+          "isList": false
+        },
+        {
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "#EditEntry-Email-Request-followup.name"
+        },
+        {
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "#EditEntry-Email-Request-followup.last-name"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

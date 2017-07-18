@@ -1,0 +1,31 @@
+{
+  "description": "Address Book",
+  "language": "en",
+  "googleAssistant": {
+    "googleAssistantCompatible": false,
+    "project": "addressbook-46148",
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [],
+    "systemIntents": [],
+    "endIntentIds": [],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "MALE_1",
+    "capabilities": [],
+    "protocolVersion": "V2"
+  },
+  "defaultTimezone": "America/Barbados",
+  "webhook": {
+    "url": "https://us-central1-addressbook-46148.cloudfunctions.net/addressBook",
+    "headers": {
+      "": ""
+    },x`
+    "available": true,
+    "useForDomains": false
+  },
+  "isPrivate": true,
+  "customClassifierMode": "use.after",
+  "mlMinConfidence": 0.3
+}

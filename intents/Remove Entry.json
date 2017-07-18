@@ -1,0 +1,127 @@
+{
+  "userSays": [
+    {
+      "id": "e74ad030-731c-4568-95ba-312fbcd99d9f",
+      "data": [
+        {
+          "text": "Delete "
+        },
+        {
+          "text": "John",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Dominic",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1400fb4a-331b-4ac6-9d7e-decc5cda254d",
+      "data": [
+        {
+          "text": "Remove "
+        },
+        {
+          "text": "Sandra",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Jones",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c88a3e77-51c5-46a3-9b68-c43a4da0b01d",
+      "data": [
+        {
+          "text": "Remove "
+        },
+        {
+          "text": "Bob",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Smith",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": false
+        },
+        {
+          "text": " from the Address Book"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "ce788a57-ea7a-4e75-ba15-5d76bc22320a",
+  "name": "Remove Entry",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.remove",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "$name",
+          "prompts": [
+            "Please enter a given name"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "$last-name",
+          "prompts": [
+            "Please enter a last name"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,270 @@
+{
+  "userSays": [
+    {
+      "id": "ce18c88e-8206-4195-8455-7aa265ffc0bb",
+      "data": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "Rose",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Lalonde",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": true
+        },
+        {
+          "text": " to the address book with address "
+        },
+        {
+          "text": "Los Angeles, California",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": true
+        },
+        {
+          "text": ", phone number "
+        },
+        {
+          "text": "413413",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        },
+        {
+          "text": " and email "
+        },
+        {
+          "text": "tentacles@therapist.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4078a9d6-662c-4b8f-ad12-05e04f031452",
+      "data": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "Mario",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Esteves",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": true
+        },
+        {
+          "text": " to the address book with email "
+        },
+        {
+          "text": "user@example.com",
+          "alias": "email",
+          "meta": "@sys.email",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ee51e450-fb01-4857-a82a-fb7a78ae5060",
+      "data": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "Emma",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Willis",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": true
+        },
+        {
+          "text": " with phone number "
+        },
+        {
+          "text": "1232323",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "36572611-d071-4f99-914b-64dd122bcac1",
+      "data": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "John",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Smith",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": true
+        },
+        {
+          "text": " with address "
+        },
+        {
+          "text": "120 Park Ave",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": false
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f2fa69db-bdbb-4b38-9de4-695e995f0499",
+      "data": [
+        {
+          "text": "Add "
+        },
+        {
+          "text": "Bob",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Sanders",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": true
+        },
+        {
+          "text": " with the address "
+        },
+        {
+          "text": "123 Any St. New York New York, 12345",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "ee107d5e-3dd1-4af3-98d5-7bf920b42a88",
+  "name": "AddEntry",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.add",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "$name",
+          "prompts": [
+            "Please give a given name"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "$last-name",
+          "prompts": [
+            "Please give a last name"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.address",
+          "name": "address",
+          "value": "$address",
+          "prompts": [
+            "Please give an address"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phone-number",
+          "value": "$phone-number",
+          "prompts": [
+            "Please give a phone number"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            "Please give an email address"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

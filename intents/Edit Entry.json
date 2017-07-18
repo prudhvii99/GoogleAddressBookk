@@ -1,0 +1,161 @@
+{
+  "userSays": [
+    {
+      "id": "576bfe48-043e-465d-a21c-9c4207179540",
+      "data": [
+        {
+          "text": "Change "
+        },
+        {
+          "text": "John",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Smith",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "889ce4e3-7080-4087-a814-c81f11496695",
+      "data": [
+        {
+          "text": "Change "
+        },
+        {
+          "text": "Luna",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Montgomery",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": false
+        },
+        {
+          "text": "\u0027s entry"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "82662b6d-1fc6-43cf-9571-9f9d5c843ee4",
+      "data": [
+        {
+          "text": "I want to change "
+        },
+        {
+          "text": "Sarah",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Jones",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": false
+        },
+        {
+          "text": "\u0027s entry"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a88ff088-610d-40b9-a778-a7c892f90187",
+      "data": [
+        {
+          "text": "Edit "
+        },
+        {
+          "text": "John",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Smith",
+          "alias": "last-name",
+          "meta": "@sys.last-name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "name": "Edit Entry",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.edit",
+      "affectedContexts": [
+        {
+          "name": "EditEntry-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "$name",
+          "prompts": [
+            "Please give a given name"
+          ],
+          "isList": false
+        },
+        {
+          "required": true,
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "$last-name",
+          "prompts": [
+            "Please give a last name"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

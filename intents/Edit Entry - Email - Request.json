@@ -1,0 +1,69 @@
+{
+  "userSays": [
+    {
+      "id": "fa2192b2-ede8-4780-85c8-272af20e0bce",
+      "data": [
+        {
+          "text": "The email"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "38a25f79-d72a-467f-b0b1-504b6d284bac",
+      "data": [
+        {
+          "text": "Email"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "04ef58de-4aa4-4acb-81a1-01e2ae2d7cd0",
+  "parentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "rootParentId": "c9011a4d-d1b2-41f7-8d11-ba1f3f3a4a87",
+  "name": "Edit Entry - Email - Request",
+  "auto": true,
+  "contexts": [
+    "EditEntry-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.edit.email",
+      "affectedContexts": [
+        {
+          "name": "EditEntry-Email-Request-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "#EditEntry-followup.name"
+        },
+        {
+          "dataType": "@sys.last-name",
+          "name": "last-name",
+          "value": "#EditEntry-followup.last-name"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {}
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
